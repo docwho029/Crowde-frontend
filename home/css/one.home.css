@@ -1,0 +1,148 @@
+.background--custom {
+    background-color: transparent;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    overflow: hidden;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+  }
+  canvas#canvas {
+    z-index: 1000;
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    transform: rotate(-12deg) scale(2) translateY(-30%);
+    --gradient-color-1: #768caf; 
+    --gradient-color-2: #e92de9; 
+    --gradient-color-3: #fd8049;  
+    --gradient-color-4: #fea904;
+    --gradient-speed: 0.000006;
+  }
+
+  .desc-box {
+    font-size: 0.8em;
+    font-weight: 500;
+    margin-top: 35vh;
+  }
+
+  
+
+  /* ------------------------ content ------------------------ */
+
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* main content styling */
+
+.title-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+
+  
+  z-index: 9999;
+  font-size: 2em;
+
+}
+
+.title{
+	font-size: 2.4em;
+}
+
+.title-box {
+	font-family: "Montserrat";
+	font-style: normal;
+}
+
+.title-box > * {
+  color: #fff;
+  opacity: 1;
+}
+
+.title-super {
+	font-weight: 500;
+	font-size: 0.5em;
+}
+
+.title-heading {
+	font-weight: 600;
+	font-size: 2.4em;
+}
+
+.desc-text {
+	font-size: 0.8em;
+	line-height: 126%;
+	text-align: center;
+	font-weight: 500;
+
+}
+
+.title-button {
+	/* background: linear-gradient(92.51deg, #f3719d 0.59%, #ff9473 102.35%); */
+	border-radius: 54px;
+	font-size: 0.7em;
+	padding: 0.5em 2em;
+	font-weight: 600;
+  border: 4px solid #414141;
+
+  transform: translateY(-4vh);
+
+  cursor: pointer;
+}
+
+@media screen and (max-width: 980px) {
+	.title-super {
+		font-size: 0.35em;
+		line-height: 0;
+	}
+
+	.title-heading {
+		font-size: 1.5em;
+	}
+
+	.desc-text{
+		font-size: 0.6em;
+		width: 17em;
+	}
+
+	.title-button{
+		font-size: 0.6em;
+	}
+}
+
+@media screen and (max-width: 730px) {
+	.title-content{
+		justify-content: center;
+	}
+
+	.circle-top{
+		display: none;
+	}
+
+	.title-super{
+		font-size: 0.4em;
+		line-height: 100%;
+	}
+
+	.title-heading{
+		font-size: 0.8em;
+		margin-bottom: 1.5em;
+	}
+
+	.desc-text{
+		font-size: 0.5em;
+	}
+
+	.title-button{
+		margin-top: 5em;
+		font-size: 0.5em;
+	}
+
+	.circle-bottom{
+		transform: translate(-50%, 50%);
+		left: 50vw;
+		bottom: -3.5em;
+	}
+}
